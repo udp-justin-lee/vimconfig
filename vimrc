@@ -74,12 +74,12 @@ colorscheme desert
 "==========================
 "= autocmd
 "==========================
-autocmd BufEnter *.c        setlocal ts=8 sw=8 sts=8 noexpandtab
-autocmd BufEnter *.S        setlocal ts=8 sw=8 sts=8 noexpandtab
-autocmd BufEnter *.py       setlocal ts=8 sw=8 sts=8 noexpandtab
-autocmd BufEnter Makefile   setlocal ts=8 sw=8 sts=8 noexpandtab
-autocmd BufEnter .*         setlocal ts=8 sw=8 sts=8 noexpandtab nocindent
-autocmd BufEnter *.md       setlocal ts=8 sw=8 sts=8 noexpandtab nocindent
+autocmd BufEnter *.c        setlocal ts=4 sw=4 sts=4 noexpandtab
+autocmd BufEnter *.S        setlocal ts=4 sw=4 sts=4 noexpandtab
+autocmd BufEnter *.py       setlocal ts=4 sw=4 sts=4 expandtab
+autocmd BufEnter Makefile   setlocal ts=4 sw=4 sts=4 noexpandtab
+autocmd BufEnter .*         setlocal ts=4 sw=4 sts=4 noexpandtab nocindent
+autocmd BufEnter *.md       setlocal ts=4 sw=4 sts=4 noexpandtab nocindent
 "augroup vimrc_autocmds
 "    autocmd!
     " highlight characters past column 120
@@ -126,10 +126,10 @@ map <PageUp> <C-U><C-U>
 map <PageDown> <C-D><C-D>
 
 "===== Vim 내의 창 크기 조절
-nmap <s-h> <C-W><
-nmap <s-j> <C-W>-
-nmap <s-k> <C-W>+
-nmap <s-l> <C-W>>
+"nmap <s-h> <C-W><
+"nmap <s-j> <C-W>-
+"nmap <s-k> <C-W>+
+"nmap <s-l> <C-W>>
 
 "===== Vim 내에서 창 간 이동
 nmap <c-h> <c-w>h
